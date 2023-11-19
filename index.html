@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <link rel="icon" href="" />
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="container">
+        <h1 class="page-title">
+            Conversor de moedas
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+        </div>
+        <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png">
+        </a>
+        <link rel="stylesheet" href="bodystyle.css">
+        <link rel="stylesheet" href="operacao.js">
+    </head>
+
+    <body>
+      <div class="container">
+        <link rel="stylesheet" href="bodystyle.css">
+        <h1 class="page-title">
+          Conversor de moedas
+        </h1>
+        <p class="page-subtitle">
+          <marquee>Descubra o valor do real convertido em outras moedas! Descubra o valor do real convertido em outras moedas! Descubra o valor do real convertido em outras moedas! Descubra o valor do real convertido em outras moedas!</marquee>
+        </p>
+        <p></p>
+        <p>Escolha para qual moeda quer converter</p>
+        <p></p>
+
+        <div class="form-group">             
+          <input
+              type="radio"
+              id='dolar'
+              name="moedaEstrangeira"
+              class="input radio"
+              value='Dólar'
+              tabindex="2"
+          /> <label for="dolar">Dolar</label>
+
+          <input
+              type="radio"
+              id='euro'
+              name="moedaEstrangeira"
+              class="input radio"
+              value='Euro'
+              tabindex="3"
+          /> <label for="euro">Euro</label>
+
+          <input
+              type="radio"
+              id='libra'
+              name="moedaEstrangeira"
+              class="input radio"
+              value='Libra'
+              tabindex="4"
+          /> <label for="libra">Libra</label>
+        </div>
+        <p></p>
+        <label for="moeda">Insira o valor em reais </label><br>
+        <p></p>
+        <input
+        type="number"
+        name="valorEmReal"
+        id="valorEmReal"
+        class='input'
+        step='0.01'
+        min='0.00'
+        max='9999999999.99'
+        value=''
+        tabindex="1"
+        onClick='ativarBotao()'
+        onChange='ativarBotao()'
+        autofocus
+        required
+        /><br>
+        <p></p>
+        <button type="submit" id="btnConverter" onclick="Converter()">Converter</button>
+        <button type="submit" id="btnLimpar" onclick="Limpar()">Limpar</button>
+        <h3 id="mensagemFormatada"</h3>
+
+      </div>
+    </body>
+    <footer>
+       
+    </footer>
+</html>
