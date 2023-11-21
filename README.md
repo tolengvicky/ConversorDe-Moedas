@@ -6,6 +6,12 @@
 
 Originalmente a proposta é a criação de um conversor de doláres para reais.
 
+Aprendizados
+
+- Explorar o uso de variáveis, manipulação de valores e a memória do computador;
+- Aprender sobre tipos de variáveis, como texto e números inteiros;
+- Fixar a quantidade de casas decimais com a função toFixed().
+
 Desafios Propostos
 
 - Adicionar outras moedas para converter; [ ]
